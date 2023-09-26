@@ -1,0 +1,31 @@
+name: sib_torsh_task
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+  flutter: 
+    sdk: flutter
+  dio: ^5.3.3
+  flutter_screenutil: ^5.9.0
+  loading_animation_widget: ^1.2.0+4
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Vazir
+      fonts:
+        - asset: assets/fonts/vazir.ttf
+
