@@ -62,8 +62,8 @@ class AddUsersView extends GetView<AddUsersController> {
                     Expanded(
                       flex: 2,
                       child: TextButton(
-                        onPressed: () {
-                          controller.validator();
+                        onPressed: () async {
+                          await controller.validator();
                         },
                         style: TextButton.styleFrom(
                           backgroundColor: SibTorshColor.color1,

@@ -12,7 +12,7 @@ class AddUsersController extends GetxController {
   TextEditingController lastNameController = TextEditingController();
   RxBool isAdding = false.obs;
 
-  void validator() {
+  Future<void> validator() async {
     if (firstNameController.text.isEmpty) {
       Get.snackbar(
         "Error",
@@ -36,7 +36,7 @@ class AddUsersController extends GetxController {
         instantInit: false,
       );
     } else {
-      addUser();
+      await addUser();
     }
   }
 
